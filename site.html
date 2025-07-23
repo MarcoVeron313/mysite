@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BM Performance Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #1e1e1e, #3a3a3a);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      color: #00ffae;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffae;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1583454110551-21c5dbda8b51?fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      background: #2a2a2a;
+      flex: 1;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 250px;
+    }
+
+    .service h3 {
+      color: #00ffae;
+      margin-bottom: 10px;
+    }
+
+    .testimonials {
+      background-color: #1e1e1e;
+    }
+
+    .testimonial {
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .contact button {
+      background: #00ffae;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .contact button:hover {
+      background: #00c992;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BM Performance Studio</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#https://wa.me/5567991230337" target="_blank">Fale conosco no WhatsApp</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transforme seu Corpo e Mente com Academia + Pilates</h2>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos um estúdio de academia e pilates apaixonado por ajudar você a alcançar o equilíbrio entre força e flexibilidade. Junte-se aos nossos treinos de academia e Pilates e inicie sua jornada de bem-estar!</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Treinamento de Academia</h3>
+        <p>Programas personalizados para ganhar força, resistência e atingir seus objetivos.</p>
+      </div>
+      <div class="service">
+        <h3>Pilates</h3>
+        <p>Sessões de Pilates para melhorar postura, flexibilidade e core.</p>
+      </div>
+      <div class="service">
+        <h3>Aulas em Grupo</h3>
+        <p>Aulas dinâmicas como HIIT, alongamento e funcional, com muita motivação.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="testimonials">
+    <h2>Depoimentos</h2>
+    <div class="testimonial">
+      <p>"Me sinto mais forte e confiante do que nunca! As professoras de Pilates são incríveis!" — Ana L.</p>
+    </div>
+    <div class="testimonial">
+      <p>"Finalmente encontrei uma academia que me dá vontade de ir todo dia. A vibe é maravilhosa!" — Marcos V.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Fale Conosco</h2>
+    <p>Envie uma mensagem e agende sua aula experimental gratuita!</p>
+    <form action="https://formsubmit.co/marcomvp19@gmail.com" method="POST">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 BM Performance Studio . Todos os direitos reservados.
+  </footer>
+</body>
+</html>
